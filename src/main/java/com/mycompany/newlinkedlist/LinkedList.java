@@ -13,7 +13,46 @@ import java.util.Iterator;
  *
  * @author nicka
  */
-public class LinkedList<T> implements Iterable<T> {
+public class LinkedList<T> implements Iterable<T>, ListMethods {
+
+    private int listSize;
+    public Node<T> head;
+    public Node<T> tail;
+    
+    @Override
+    public void add(Object addme) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean remove(Object removeMe) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int size() {
+        return this.listSize;
+    }
+
+    @Override
+    public void clear() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean contains(Object findMe) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean set(int index, Object newVal) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return listSize == 0;
+    }
 
     /**
      * node class, is an inner class
@@ -47,37 +86,9 @@ public class LinkedList<T> implements Iterable<T> {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    private int listSize;
-    public Node<T> head;
-    public Node<T> tail;
+ 
     
     
-    public int size(){
-        
-    }
-    
-    public boolean isEmpty(){
-        
-    }
-    
-    public void clear(){
-        
-    }
-    
-    public boolean contains(T findMe){
-        
-    }
-    
-    public boolean remove(T removeMe){
-        
-    }
-    
-    public boolean add(T addMe){
-        
-    }
-    
-    public boolean set(int index){
-        
-    }
+  
     
 }
